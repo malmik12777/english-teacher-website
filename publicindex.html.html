@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Саликова Ольга Александровна - Репетитор английского языка</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo">Саликова <span>Ольга</span></div>
+                <nav>
+                    <ul>
+                        <li><a href="#about">О себе</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons">
+                    <button class="btn btn-outline" onclick="showModal('login')">Вход</button>
+                    <button class="btn" onclick="showModal('register')">Регистрация</button>
+                </div>
+            </div>
+        </header>
+
+        <section class="hero">
+            <h1>Репетитор английского языка</h1>
+            <p>Профессиональное обучение английскому языку для детей и взрослых. Индивидуальный подход и гарантированный результат.</p>
+            <button class="btn" onclick="showModal('register')">Записаться на пробное занятие</button>
+        </section>
+
+        <section id="about">
+            <h2>Обо мне</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Саликова Ольга Александровна</h3>
+                    <p>Я профессиональный репетитор английского языка с более чем 10-летним стажем преподавания. Обладаю высшим педагогическим образованием и сертификатами международного образца.</p>
+                    <p>Моя методика обучения основана на индивидуальном подходе к каждому ученику, что позволяет достигать высоких результатов за короткий период времени. Я специализируюсь на подготовке к международным экзаменам, разговорной практике и грамматике.</p>
+                    <p>Мои ученики успешно сдают экзамены IELTS, TOEFL, ЕГЭ и ОГЭ, а также достигают свободного владения английским языком для повседневного общения и профессиональной деятельности.</p>
+                    <div style="margin-top: 20px;">
+                        <p><strong>Образование:</strong> Педагогический университет, специальность "Иностранные языки"</p>
+                        <p><strong>Сертификаты:</strong> CELTA, IELTS 8.5, TOEFL iBT 118</p>
+                        <p><strong>Опыт работы:</strong> Более 10 лет</p>
+                        <p><strong>Количество учеников:</strong> Более 500</p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://placehold.co/500x600/667eea/ffffff?text=Teacher+Photo" alt="Саликова Ольга Александровна">
+                </div>
+            </div>
+        </section>
+
+        <section id="services" style="background: rgba(240, 244, 255, 0.95);">
+            <h2>Мои услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">👨‍🎓</div>
+                    <h3>Индивидуальные занятия</h3>
+                    <p>Персональные занятия, адаптированные под уровень и цели каждого ученика. Максимальное внимание и эффективность обучения.</p>
+                    <div class="price">1500 ₽ / 60 мин</div>
+                    <button class="btn" onclick="showModal('register')">Записаться</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👥</div>
+                    <h3>Групповые занятия</h3>
+                    <p>Занятия в мини-группах до 4 человек. Интерактивное обучение с практикой общения и взаимодействия.</p>
+                    <div class="price">900 ₽ / 60 мин</div>
+                    <button class="btn" onclick="showModal('register')">Записаться</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📝</div>
+                    <h3>Подготовка к экзаменам</h3>
+                    <p>Специализированная подготовка к IELTS, TOEFL, ЕГЭ, ОГЭ и другим международным экзаменам.</p>
+                    <div class="price">1800 ₽ / 60 мин</div>
+                    <button class="btn" onclick="showModal('register')">Записаться</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Контакты и запись</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>📱 Телефон</h4>
+                        <p>+7 (999) 123-45-67</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>✉️ Email</h4>
+                        <p>olga.salykova@example.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>📍 Адрес</h4>
+                        <p>г. Москва, ул. Примерная, д. 15</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>🕒 Рабочее время</h4>
+                        <p>Пн-Пт: 9:00 - 20:00<br>Сб-Вс: 10:00 - 18:00</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="card">
+                        <h3>Запись на занятие</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="contactName">Ваше имя</label>
+                                <input type="text" id="contactName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email</label>
+                                <input type="email" id="contactEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactPhone">Телефон</label>
+                                <input type="tel" id="contactPhone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactService">Выберите услугу</label>
+                                <select id="contactService" required>
+                                    <option value="">Выберите услугу</option>
+                                    <option value="individual">Индивидуальные занятия</option>
+                                    <option value="group">Групповые занятия</option>
+                                    <option value="exam">Подготовка к экзаменам</option>
+                                    <option value="trial">Пробное занятие</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactMessage">Сообщение</label>
+                                <textarea id="contactMessage" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn" style="width: 100%;">Записаться</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2023 Саликова Ольга Александровна. Все права защищены.</p>
+            <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.8;">
+                Профессиональный репетитор английского языка с более чем 10-летним стажем преподавания
+            </p>
+        </footer>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Вход в личный кабинет</h3>
+                <button class="close-modal" onclick="closeModal('login')">&times;</button>
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Пароль</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="radio" name="userType" value="student" checked> Ученик
+                    </label>
+                    <label style="margin-left: 20px;">
+                        <input type="radio" name="userType" value="teacher"> Преподаватель
+                    </label>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Регистрация</h3>
+                <button class="close-modal" onclick="closeModal('register')">&times;</button>
+            </div>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerName">Имя</label>
+                    <input type="text" id="registerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPhone">Телефон</label>
+                    <input type="tel" id="registerPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Пароль</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerConfirmPassword">Подтвердите пароль</label>
+                    <input type="password" id="registerConfirmPassword" required>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="radio" name="registerType" value="student" checked> Ученик
+                    </label>
+                    <label style="margin-left: 20px;">
+                        <input type="radio" name="registerType" value="teacher"> Преподаватель
+                    </label>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Modal functions
+        function showModal(modalId) {
+            document.getElementById(modalId + 'Modal').style.display = 'flex';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId + 'Modal').style.display = 'none';
+        }
+
+        // Close modals when clicking outside
+        window.onclick = function(event) {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        }
+
+        // Form submissions
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Спасибо за заявку! Мы свяжемся с вами в ближайшее время.');
+            this.reset();
+        });
+
+        document.getElementById('loginForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+            
+            try {
+                const response = await fetch('/api/auth/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ email, password })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    localStorage.setItem('token', data.token);
+                    localStorage.setItem('userRole', data.role);
+                    closeModal('login');
+                    
+                    if (data.role === 'teacher') {
+                        window.location.href = '/teacher-dashboard';
+                    } else {
+                        window.location.href = '/student-dashboard';
+                    }
+                } else {
+                    alert(data.message || 'Ошибка входа');
+                }
+            } catch (error) {
+                alert('Ошибка соединения с сервером');
+            }
+        });
+
+        document.getElementById('registerForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('registerName').value;
+            const email = document.getElementById('registerEmail').value;
+            const phone = document.getElementById('registerPhone').value;
+            const password = document.getElementById('registerPassword').value;
+            const confirmPassword = document.getElementById('registerConfirmPassword').value;
+            const role = document.querySelector('input[name="registerType"]:checked').value;
+            
+            if (password !== confirmPassword) {
+                alert('Пароли не совпадают');
+                return;
+            }
+            
+            try {
+                const response = await fetch('/api/auth/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ name, email, phone, password, role })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    alert('Регистрация успешна! Теперь вы можете войти.');
+                    closeModal('register');
+                    document.getElementById('registerForm').reset();
+                } else {
+                    alert(data.message || 'Ошибка регистрации');
+                }
+            } catch (error) {
+                alert('Ошибка соединения с сервером');
+            }
+        });
+    </script>
+</body>
+</html>
